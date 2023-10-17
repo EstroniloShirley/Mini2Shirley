@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+<link rel="stylesheet" href="./css/style.css">
+    <title>Shop Mini2</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script src="lib/swiper.js"></script>
+    <script
+      src="./script.js"
+      defer
+    ></script>
+    <title>Shopaholic.ph</title>
+  </head>
+
+
+ 
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./JS/script.js">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Navbar */
+
+      #logo {
+        /* width: 90px; */
+        aspect-ratio: 4/3;
+        object-fit: contain;
+        /* height: 5vh; */
+      }
+
+      #mainMenu .nav-link {
+        color: black;
+      }
+
+      /* #mainMenu .nav-link:active{
+        background: #230344;
+        color: #fd4556;
+      } */
+
+      #mainMenu .nav-link:hover {
+        background: rgb(255, 52, 106);
+        color: black;
+        border-radius: 5px;
+      }
+
+      .active {
+        background: rgb(255, 52, 106);
+        border-radius: 5px;
+      }
+      /* #mainMenu .nav-link.active {
+        background: rgb(255, 52, 106);
+        color: black;
+        border-radius: 5px;
+      }  */
+      /* 
+    #mainMenu .dropdown-menu.active {
+      background: #230344;
+      color: #fd4556;
+      border-radius: 5px;
+    } */
+
+      .navbar-nav li {
+        padding: 0;
+       
+      }
+
+      img {
+        max-width: 100%;
+        /* height: 20%; */
+        width: 130px;
+      }
+
+      nav {
+        background: #f8f6f4;
+      }
+
+      .dropdown-menu {
+        background: #000000;
+      }
+
+      .dropdown-menu a {
+        color: #bd3944;
+        font-size: 14px;
+        font-family: 'Amarante', cursive;
+        font-weight: 900;
+      }
+
+      .dropdown-item:hover {
+        background: #230344;
+        color: #fd4556;
+        border-radius: 5px;
+      }
+
+      /* Hero Section  */
+
+      #Hero {
+        background: url(../img/HEROMP2.png) center center/cover no-repeat;
+        width: 100%;
+        height: 80vh;
+        margin-top: 4rem;
+      }
+
+      #Hero-p h2 {
+      }
+      #Hero-p h2 {
+        font-size: 2.8rem;
+        color: rgb(0, 89, 129);
+      }
+
+      #Hero-p {
+        padding-top: 17rem;
+        font-weight: 5000;
+        opacity: 1;
+        text-align: center;
+      }
+
+      .btn {
+        background-color: rgb(0, 161, 225);
+        padding: 10px;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .btn a {
+        font-family: 'Sanchez', serif;
+        color: #000000;
+        text-decoration: none;
+        border: 2px 2px;
+        font-size: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 540;
+      }
+
+      .btn:hover {
+        background-color: rgb(255, 52, 106);
+      }
+    /* side navbar */
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      
+      .sidenav .li{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav .li a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav .li a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      </style>
+</head>
+<body>
+    <nav
+    id="main_menu"
+      class="navbar navbar-expand-sm navbar-light bg-light fixed-top"
+ 
+  >
+  <div class="container">
+    <a href="index.html" class="navbar-brand">
+      <img src="./Images/Mp2LogoBrand.png" alt="ShopaholicStop.PH"  />
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainMenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="mainMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="crosshair.html" class="nav-link">Products</a></li>
+        <li><a href="index.html" class="nav-link ">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <!-- Carousel -->
+ <section
+ id="slider"
+ class="carousel slide carousel-fade"
+ style="padding-top: 7%;"
+ data-bs-ride="carousel"
+ data-bs-touch="true"
+>
+ <div class="carousel-inner">
+   <div class="carousel-item active">
+     <img src="./Images/furniture.jpg" alt="Banner1" class="d-block w-100"/>
+   </div>
+   <div class="carousel-item active">
+     <img src="./Images/freeshipping.png" alt="Banner2" class="d-block w-100" />
+   </div>
+   <div class="carousel-item active">
+     <img src="./Images/shopping images.jpg" alt="Banner3" class="d-block w-100" />
+   </div>
+ </div>
+ <button
+   class="carousel-control-prev"
+   type="button"
+   data-bs-target="#slider"
+   data-bs-slide="prev"
+ >
+   <span class="carousel-control-prev-icon"></span>
+ </button>
+ <button
+   class="carousel-control-next"
+   type="button"
+   data-bs-target="#slider"
+   data-bs-slide="next"
+ >
+   <span class="carousel-control-next-icon"></span>
+ </button>
+</section>
+
+  <body>
+    <section class="container">
+      <h2>Featured Items</h2>
+      <div
+        id="popular-items"
+        class="grid"
+      >
+        <div class="card">
+          <a href="#">
+            <img
+              src="#"
+              class="card-img-top"
+              alt="Electronics"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Item Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Price: xxx</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="#"
+              class="card-img-top"
+              alt="Electronics"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Item Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Price: xxx</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="#"
+              class="card-img-top"
+              alt="Electronics"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Item Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Price: xxx</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="#"
+              class="card-img-top"
+              alt="Electronics"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Item Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Price: xxx</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="#"
+              class="card-img-top"
+              alt="Electronics"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Item Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Price: xxx</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="#"
+              class="card-img-top"
+              alt="Electronics"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Item Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Price: xxx</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="#"
+              class="card-img-top"
+              alt="Electronics"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Item Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Price: xxx</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img
+              src="#"
+              class="card-img-top"
+              alt="Electronics"
+            />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Item Name</h5>
+            <p class="card-text">
+              <small class="text-muted">Price: xxx</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="pt-5">Shopaholic.ph</h1>
+    <section>
+      <nav>
+        <form action="">
+          <fieldset>
+            <input
+              type="text"
+              placeholder="Search..."
+            />
+            <button type="submit">Go</button>
+          </fieldset>
+        </form>
+        <ul>
+            <li><a href="#"> New Arrivals</a></li>
+            <li><a href="#">Clothes</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Others</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section>
+        <div><a href="#">
+            <img src="" alt="">
+        </a></div>
+    </section>
+  </body>
+</html>
+
+
+
+
+    <!-- Bootstrap Javascript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
